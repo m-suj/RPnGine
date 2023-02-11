@@ -1,0 +1,15 @@
+RPnGine
+
+
+MAIN ENGINE ARCHITECTURE (presumed highest to lowest priority):
+	1. Level/map creator:
+	2. Movement
+	3. Interaction system
+	4. Character system
+	5. NPCs and Dialogue system
+	5. Graphical User Interface
+
+
+DETAILED ENGINE ARCHITECTURE (:
+
+	1. LEVEL/MAP CREATOR:
