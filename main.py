@@ -1,14 +1,34 @@
 import arcade
 from stg import game_window
+from map import Map
+from level import Level
+from tile import Tile
+from entity import Entity, Player
+
+
+tile_map = [Tile() for i in range(10) [Tile() for j in range(10)]]
+
+levels = [
+    Level(10, 10, tile_map),
+    Level(10, 10, tile_map)
+]
+
+map = Map(levels)
+
+player = Player(map.levels[0].map[0][0])
 
 
 class Game(arcade.Window):
     def __init__(self):
         super().__init__(game_window.w, game_window.h, game_window.title)
 
-        arcade.set_background_color(arcade.color.AMAZON)
+        self.map = worldmap
+        self.player = player
 
-    # def setup(self):
+        arcade.set_background_color(arcade.color.WHITE_SMOKE)
+
+    def setup(self):
+        pass
 
     def on_update(self, dt: float):
         pass

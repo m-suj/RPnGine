@@ -8,9 +8,9 @@ class Level:
     Contains tiles and transitions to other levels of the map
     """
 
-    def __init__(self, w, h):
+    def __init__(self, w, h, tile_map):
         self.width = w
         self.height = h
 
-        self.map: list[list[Tile]]
+        self.map: list[list[Tile]] = tile_map
         self.transitions: dict[Tile: Level] = {}
